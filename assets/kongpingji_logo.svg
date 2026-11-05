@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">重庆空瓶记 Logo</title>
+  <desc id="desc">Minimal abstract dusty-rose logo mark with Chinese and English wordmark for Kongpingji Cosmetics Trade.</desc>
+  <defs>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9A3A8"/>
+      <stop offset="0.55" stop-color="#B98188"/>
+      <stop offset="1" stop-color="#9F6068"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Symbol -->
+  <g id="symbol" transform="translate(110 70) scale(1)">
+    <!-- left pillar -->
+    <path d="M0 0 H84 V286 H0 Z" fill="url(#rose)"/>
+
+    <!-- right abstract arch -->
+    <path d="M176 42
+             C279 78 334 170 334 286
+             H250
+             C250 197 219 133 164 99
+             C151 91 139 86 126 82
+             C142 67 158 54 176 42 Z" fill="url(#rose)"/>
+
+    <!-- sweeping negative-space river/bridge line, cut visually by warm ivory stroke -->
+    <path d="M24 268
+             C82 213 140 190 204 211
+             C259 229 303 276 357 338" 
+          fill="none" stroke="#F6F2EC" stroke-width="24" stroke-linecap="round"/>
+
+    <!-- lower rose stroke to keep bridge shape readable -->
+    <path d="M29 286
+             C86 236 139 219 197 238
+             C244 254 280 292 324 344" 
+          fill="none" stroke="url(#rose)" stroke-width="30" stroke-linecap="square"/>
+
+    <!-- small diagonal cut at base, matching original visual rhythm -->
+    <path d="M0 286 L84 286 L84 247 Z" fill="#F6F2EC" opacity="0.95"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" transform="translate(520 145)">
+    <text x="0" y="78" font-family="'Noto Serif CJK SC','Source Han Serif SC','SimSun',serif" font-size="72" letter-spacing="10" fill="#2E2E31">重庆空瓶记</text>
+    <text x="5" y="132" font-family="Montserrat, Arial, sans-serif" font-size="22" letter-spacing="8" fill="#9F6068">KONGPINGJI COSMETICS TRADE</text>
+    <line x1="6" y1="170" x2="500" y2="170" stroke="#C9A3A8" stroke-width="2" opacity="0.7"/>
+    <text x="6" y="220" font-family="'Noto Sans CJK SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-size="28" letter-spacing="8" fill="#6D6264">美妆批发贸易 · 专业供应链伙伴</text>
+  </g>
+</svg>
