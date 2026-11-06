@@ -76,7 +76,7 @@ section{padding:130px 0}
 .tile img{width:108%;max-width:none;opacity:.86;transition:opacity .35s,transform .5s}
 .tile:hover{background:var(--bg2)}
 .tile:hover img{opacity:1;transform:scale(1.06)}
-.tile.cta{grid-column:span 3;aspect-ratio:auto;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-family:var(--serif);font-size:clamp(18px,2.2vw,28px);letter-spacing:.12em;
+.tile.cta{grid-column:span 4;aspect-ratio:auto;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-family:var(--serif);font-size:clamp(18px,2.2vw,28px);letter-spacing:.12em;
   background:linear-gradient(120deg,rgba(185,129,136,.28),rgba(159,96,104,.1))}
 .tile.cta span{color:var(--rose);font-family:var(--en);font-size:28px}
 @media(max-width:900px){.wall{grid-template-columns:repeat(3,1fr)}.tile.cta{grid-column:span 3}}
@@ -124,7 +124,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.scroll::after{animation:none}html{scroll-behavior:auto}}
 @media(max-width:700px){section{padding:84px 0}.wrap{padding:0 22px}}
 @media(max-width:700px){.scroll{display:none}.hero .cta .btn{padding:14px 30px}}
-@media(max-width:560px){.tile:nth-child(13){grid-column:span 2}}
+
 .contact h2.ct{font-size:clamp(24px,3.4vw,40px);letter-spacing:.1em;margin:18px 0 6px}
 .contact .big{letter-spacing:.06em;word-break:normal;font-variant-numeric:lining-nums}
 .contact button.big{background:none;border:0;border-bottom:1px solid var(--line);color:var(--ink);width:100%;text-align:left;cursor:pointer;margin:30px 0 0;padding-bottom:30px}
