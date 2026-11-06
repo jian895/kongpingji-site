@@ -153,3 +153,61 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .feat{grid-template-columns:auto 1.4fr auto}
 .feat-t h3{white-space:nowrap}
 @media(max-width:900px){.feat{grid-template-columns:1fr}}
+
+/* ===== mobile refinements (<=700px) ===== */
+@media(max-width:700px){
+  .wrap{padding:0 22px}
+  nav .wrap{height:64px}
+  .logo svg{height:26px}
+  .nav-cta{padding:7px 18px;font-size:12px}
+
+  .hero{min-height:auto;padding:0}
+  .hero .wrap{padding-top:130px;padding-bottom:84px}
+  .hero h1{font-size:clamp(52px,16vw,72px);line-height:1.18;margin:20px 0 22px}
+  .hero p.lead{font-size:15px;line-height:1.85}
+  .hero .cta{margin-top:30px;gap:12px}
+  .btn{padding:13px 28px;font-size:14px}
+  .scroll{display:none}
+  .hero-mark{width:92vw;right:-22%;top:44%;opacity:.12}
+
+  .stat{padding:26px 8px}
+  .stat b{font-size:40px}
+  .stat span{font-size:12px;letter-spacing:.2em}
+
+  section{padding:68px 0}
+  .head{margin-bottom:34px;gap:10px}
+  .head h2{font-size:34px;margin-top:10px}
+  .head p{font-size:14px}
+
+  .about{gap:34px}
+  .about h2{font-size:34px;margin:10px 0 20px}
+  .about p{font-size:15px}
+  .about .panel{aspect-ratio:16/9}
+  .about .panel svg{width:34%}
+
+  .tile.cta{padding:20px;font-size:17px}
+  .tile.cta span{font-size:22px}
+
+  .cols{grid-template-columns:1fr 1fr;gap:14px}
+  .col{border:1px solid var(--line);border-top:2px solid var(--rose2);border-radius:4px;padding:18px 16px 20px;background:rgba(244,238,234,.025)}
+  .col h3{font-size:20px;margin:8px 0 6px}
+  .col p{font-size:12.5px;line-height:1.7}
+  .feat{margin-top:14px;padding:26px 22px;gap:14px}
+  .feat-t h3{font-size:34px}
+  .feat p{font-size:14px}
+  .feat a{white-space:normal;text-align:center;justify-self:stretch;padding:12px 16px;font-size:13px;letter-spacing:.08em}
+
+  .row{padding:20px 4px;gap:8px 14px}
+  .row:hover{padding-left:4px}
+  .row h3{font-size:20px}
+  .row p{font-size:14px}
+
+  .quote blockquote{font-size:30px}
+
+  .contact h2.ct{font-size:26px;line-height:1.5}
+  .phone-row{margin:22px 0 34px;padding-bottom:24px;column-gap:18px}
+  .contact button.big,.contact .phone-row button.big{font-size:clamp(38px,11.4vw,52px)}
+  .phone-row .after b{font-size:16px}
+  footer .wrap{flex-direction:column;gap:6px}
+}
+@media(max-width:340px){.cols{grid-template-columns:1fr}}
