@@ -4,185 +4,307 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>重庆空瓶记化妆品有限公司</title>
-<meta name="description" content="重庆空瓶记化妆品有限公司：深耕重庆的美妆个护品牌代理商，覆盖连锁CS、KA、饰品店、政企平台与即时零售。">
-<meta name="theme-color" content="#0c0a0b">
+<meta name="description" content="值得空瓶，方为好物。重庆空瓶记，深耕重庆的美妆个护品牌代理商，十六个合作品牌，连锁、商超、饰品店、政企平台与即时零售。">
+<meta name="theme-color" content="#0a0809">
+<meta property="og:title" content="重庆空瓶记化妆品有限公司">
+<meta property="og:description" content="值得空瓶，方为好物。">
+<meta property="og:image" content="https://kongpingji.cn/assets/og.png">
 <link rel="icon" href="assets/kongpingji_logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css">
+<style>
+:root{
+  --bg:#0a0809;--bg2:#100d0e;--ink:#f4eeea;--muted:#9d9396;
+  --rose:#d4a5aa;--rose2:#b98188;--rose3:#9f6068;
+  --line:rgba(244,238,234,.14);
+  --serif:"Songti SC","Noto Serif SC","Source Han Serif SC","STSong",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --en:"Cormorant Garamond","Didot","Bodoni 72",Georgia,serif;
+  --ease:cubic-bezier(0.22,1,0.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+em{font-style:normal}
+:focus-visible{outline:2px solid var(--rose);outline-offset:4px;border-radius:6px}
+.eyebrow{font-family:var(--en);letter-spacing:.38em;text-transform:uppercase;font-size:13px;color:var(--rose)}
+.serif{font-family:var(--serif);font-weight:500}
+.gtext{background:linear-gradient(120deg,#ecc9cd,var(--rose2) 55%,var(--rose3));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* film grain + vignette */
+body::before{content:"";position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+body::after{content:"";position:fixed;inset:0;z-index:59;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.45) 100%)}
+
+/* fixed chrome */
+.top{position:fixed;z-index:50;inset:0 0 auto 0;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(20px,4vw,48px);transition:background .5s var(--ease)}
+.top.bg{background:rgba(10,8,9,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:19px;letter-spacing:.2em}
+.brand svg{height:28px;width:auto}
+.brand small{display:block;font-family:var(--en);font-size:10px;letter-spacing:.32em;color:var(--rose);margin-top:-3px}
+.pill{border:1px solid var(--rose2);color:var(--rose);padding:8px 22px;border-radius:999px;font-size:13px;letter-spacing:.2em;transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease)}
+.pill:hover{background:var(--rose2);color:#fff}.pill:active{transform:scale(.97)}
+.chap{position:fixed;z-index:50;right:clamp(14px,2.4vw,34px);top:50%;transform:translateY(-50%);display:grid;gap:14px;justify-items:end;font-family:var(--en);font-size:12px;letter-spacing:.2em}
+.chap a{display:flex;align-items:center;gap:10px;color:var(--muted);transition:color .4s var(--ease)}
+.chap a i{display:block;width:18px;height:1px;background:currentColor;transition:width .6s var(--ease)}
+.chap a span{opacity:0;transform:translateX(6px);transition:opacity .4s var(--ease),transform .5s var(--ease)}
+.chap a.on{color:var(--rose)}.chap a.on i{width:42px}.chap a.on span,.chap a:hover span{opacity:1;transform:none}
+@media(max-width:900px){.chap{display:none}}
+.skip{position:fixed;left:16px;top:16px;z-index:100;background:#fff;color:#000;padding:8px 12px;border-radius:8px;transform:translateY(-200%)}.skip:focus{transform:none}
+
+/* generic scene */
+.scene{position:relative}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.glow{position:absolute;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(185,129,136,.34),transparent 65%);animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate3d(-4%,2%,0) scale(1)}to{transform:translate3d(6%,-5%,0) scale(1.14)}}
+
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;overflow:hidden;background:var(--bg)}
+.hero .g1{width:90vmax;height:90vmax;right:-30vmax;top:-30vmax}
+.hero .g2{width:70vmax;height:70vmax;left:-35vmax;bottom:-40vmax;background:radial-gradient(circle,rgba(159,96,104,.26),transparent 62%);animation-duration:28s}
+.hero-mark{position:absolute;right:-6vw;top:50%;height:112vh;width:auto;aspect-ratio:390/380;opacity:.34;will-change:transform}
+.hero .wrap{position:relative;z-index:2;padding-top:90px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(60px,12.4vw,190px);line-height:1.08;letter-spacing:.03em;margin:28px 0 36px}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .c{display:inline-block;transform:translateY(105%);animation:rise 1.4s var(--ease) forwards;animation-delay:calc(var(--i)*90ms + 350ms)}
+.hero h1 .ln:nth-child(2) .c{animation-delay:calc(var(--i)*90ms + 800ms)}
+@keyframes rise{to{transform:none}}
+.hero p.lead{max-width:30em;color:var(--muted);font-size:clamp(15px,1.5vw,19px);opacity:0;animation:fade 1.6s var(--ease) 1.7s forwards}
+@keyframes fade{to{opacity:1}}
+.hero .eyebrow{opacity:0;animation:fade 1.6s var(--ease) .2s forwards}
+.scroll{position:absolute;z-index:3;left:50%;bottom:30px;transform:translateX(-50%);display:grid;justify-items:center;gap:10px;font-family:var(--en);font-size:11px;letter-spacing:.4em;color:var(--muted);opacity:0;animation:fade 1.6s var(--ease) 2.4s forwards}
+.scroll::after{content:"";width:1px;height:54px;background:linear-gradient(var(--rose2),transparent);animation:line 2.4s var(--ease) infinite;transform-origin:top}
+@keyframes line{0%{transform:scaleY(0)}60%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+/* chapter I pinned text */
+.s1{height:340vh}
+.pin{position:sticky;top:0;height:100svh;display:grid;align-content:center;overflow:hidden}
+.s1 .g1{width:70vmax;height:70vmax;left:50%;top:50%;margin:-35vmax 0 0 -35vmax;opacity:.7}
+.big{font-family:var(--serif);font-weight:500;font-size:clamp(44px,9.6vw,148px);line-height:1.2;letter-spacing:.04em}
+.big .ln{display:block}.big .c{opacity:.14;transition:opacity .7s var(--ease)}
+.big .c.on{opacity:1}
+.s1 .after{margin-top:clamp(28px,5vh,56px);max-width:36em;color:var(--muted);font-size:clamp(15px,1.5vw,19px);opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.s1 .after.on{opacity:1;transform:none}
+.s1 .after b{color:var(--ink);font-weight:500;font-family:var(--serif);letter-spacing:.06em}
+
+/* chapter II brands */
+.s2{padding:clamp(100px,16vh,180px) 0;background:var(--bg2);overflow:hidden}
+.s2 .g1{width:60vmax;height:60vmax;left:-20vmax;top:-10vmax;opacity:.6}
+.count{display:flex;align-items:flex-end;gap:clamp(12px,2vw,28px);margin:clamp(20px,4vh,40px) 0 clamp(36px,7vh,80px)}
+.count b{font-family:var(--serif);font-weight:500;font-size:clamp(150px,30vw,440px);line-height:.82;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.count span{font-family:var(--serif);font-size:clamp(20px,3vw,40px);letter-spacing:.2em;padding-bottom:clamp(10px,3vw,46px);color:var(--ink)}
+.count small{display:block;font-family:var(--sans);font-size:14px;letter-spacing:.14em;color:var(--muted);margin-top:8px}
+.mq{display:grid;gap:clamp(8px,1.4vw,18px);-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.track{display:flex;width:max-content;animation:mq 70s linear infinite}
+.mq .track:nth-child(2){animation-direction:reverse;animation-duration:84s;animation-delay:-40s}
+.mq:hover .track{animation-play-state:paused}
+.track img{height:clamp(70px,10vw,140px);width:auto;padding:0 clamp(6px,1.4vw,22px);opacity:.82;transition:opacity .4s var(--ease),transform .6s var(--ease)}
+.track img:hover{opacity:1;transform:scale(1.06)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.s2 .note{margin-top:clamp(28px,5vh,56px);color:var(--muted);font-size:13px;letter-spacing:.08em}
+.s2 .lede{font-family:var(--serif);font-size:clamp(22px,3vw,40px);line-height:1.5;letter-spacing:.06em;max-width:18em}
+
+/* chapter III channels */
+.s3{padding:clamp(100px,16vh,180px) 0 0;background:var(--bg)}
+.s3 h2.hl{font-family:var(--serif);font-weight:500;font-size:clamp(34px,6vw,92px);line-height:1.2;letter-spacing:.04em;margin:26px 0 clamp(48px,9vh,110px);max-width:14em}
+.rows{border-top:1px solid var(--line)}
+.chrow{display:grid;grid-template-columns:90px 1.3fr 1fr;align-items:center;gap:24px;padding:clamp(26px,4.6vh,52px) 0;border-bottom:1px solid var(--line);transition:padding-left .8s var(--ease),color .5s var(--ease)}
+.chrow i{font-family:var(--en);font-style:normal;color:var(--rose);letter-spacing:.2em;font-size:15px}
+.chrow h3{font-family:var(--serif);font-weight:500;font-size:clamp(40px,7.4vw,112px);line-height:1.1;letter-spacing:.05em;transition:color .5s var(--ease),transform .8s var(--ease)}
+.chrow p{color:var(--muted);font-size:clamp(14px,1.3vw,17px);max-width:24em;transition:color .5s var(--ease)}
+.chrow:hover{padding-left:clamp(10px,2vw,28px)}
+.chrow:hover h3{color:var(--rose)}.chrow:hover p{color:var(--ink)}
+@media(max-width:760px){.chrow{grid-template-columns:44px 1fr;gap:6px 14px}.chrow p{grid-column:2}}
+.feat{position:relative;overflow:hidden;margin-top:clamp(80px,14vh,160px);padding:clamp(90px,16vh,190px) 0;background:#1a0f12}
+.feat .g1{width:80vmax;height:80vmax;right:-30vmax;top:-30vmax;background:radial-gradient(circle,rgba(185,129,136,.5),transparent 62%);animation-duration:18s}
+.feat .ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--serif);font-size:clamp(200px,42vw,640px);line-height:1;letter-spacing:.06em;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(212,165,170,.2);pointer-events:none;will-change:transform}
+.feat .wrap{position:relative;z-index:2}
+.feat .tag{display:inline-block;border:1px solid var(--rose2);color:var(--rose);padding:6px 20px;border-radius:999px;font-size:13px;letter-spacing:.28em}
+.feat h3{font-family:var(--serif);font-weight:500;font-size:clamp(64px,13vw,200px);line-height:1.05;letter-spacing:.06em;margin:28px 0}
+.feat p{max-width:30em;color:#d9ccc8;font-size:clamp(16px,1.6vw,21px)}
+.feat a.go{display:inline-flex;align-items:center;gap:14px;margin-top:44px;font-family:var(--serif);font-size:clamp(18px,2vw,26px);letter-spacing:.1em;border-bottom:1px solid var(--rose2);padding-bottom:6px;transition:gap .5s var(--ease),color .4s var(--ease)}
+.feat a.go:hover{gap:26px;color:var(--rose)}
+
+/* chapter IV team */
+.s4{padding:clamp(100px,16vh,180px) 0;background:var(--bg2);overflow:hidden}
+.s4 h2.hl{font-family:var(--serif);font-weight:500;font-size:clamp(34px,6vw,92px);line-height:1.2;letter-spacing:.04em;margin:26px 0 clamp(48px,9vh,100px);max-width:12em}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.stat{padding:clamp(28px,5vh,56px) clamp(0px,2vw,32px) 0 0;position:relative}
+.stat+.stat{padding-left:clamp(16px,2.4vw,40px);border-left:1px solid var(--line)}
+.stat .n{font-family:var(--serif);font-weight:500;font-size:clamp(64px,13vw,200px);line-height:1;letter-spacing:-.01em;white-space:nowrap}
+.stat .n sub{font-size:.28em;vertical-align:baseline;letter-spacing:.1em;margin-left:.1em;color:var(--rose)}
+.stat h4{font-family:var(--serif);font-weight:500;font-size:clamp(18px,2vw,28px);letter-spacing:.14em;margin-top:18px}
+.stat p{color:var(--muted);font-size:clamp(13px,1.2vw,16px);margin-top:6px;max-width:16em}
+@media(max-width:760px){.stats{grid-template-columns:1fr}.stat+.stat{padding-left:0;border-left:0;border-top:1px solid var(--line);margin-top:28px}.stat .n{font-size:clamp(88px,30vw,150px)}}
+.svc{margin-top:clamp(56px,10vh,110px);display:flex;flex-wrap:wrap;gap:12px}
+.svc span{border:1px solid var(--line);border-radius:999px;padding:10px 24px;font-size:clamp(14px,1.3vw,17px);letter-spacing:.12em;color:var(--ink);transition:border-color .4s var(--ease),color .4s var(--ease),transform .5s var(--ease)}
+.svc span:hover{border-color:var(--rose2);color:var(--rose);transform:translateY(-3px)}
+
+/* quote */
+.s5{height:260vh}
+.s5 .pin{place-items:center;text-align:center}
+.s5 .g1{width:80vmax;height:80vmax;left:50%;top:50%;margin:-40vmax 0 0 -40vmax}
+.s5 .qmark{position:absolute;left:50%;top:50%;height:120vh;aspect-ratio:390/380;transform:translate(-50%,-50%);opacity:.1;pointer-events:none}
+.s5 blockquote{position:relative;font-family:var(--serif);font-weight:500;font-size:clamp(52px,12vw,190px);line-height:1.18;letter-spacing:.06em;will-change:transform,opacity,filter}
+.s5 blockquote em{background:linear-gradient(120deg,#ecc9cd,var(--rose2) 55%,var(--rose3));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* contact */
+.s6{position:relative;padding:clamp(110px,18vh,200px) 0 clamp(60px,10vh,110px);background:var(--bg);overflow:hidden}
+.s6 .g1{width:70vmax;height:70vmax;left:-20vmax;bottom:-40vmax;opacity:.8}
+.s6 .wrap{position:relative}
+.s6 h2.hl{font-family:var(--serif);font-weight:500;font-size:clamp(36px,6.4vw,100px);line-height:1.2;letter-spacing:.04em;margin:26px 0 clamp(36px,7vh,80px)}
+.phone-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px clamp(16px,2.4vw,36px)}
+.phone{font-family:var(--serif);font-weight:500;font-size:clamp(46px,10.4vw,168px);line-height:1.05;letter-spacing:.02em;white-space:nowrap;transition:color .4s var(--ease),transform .5s var(--ease);margin-left:-.04em}
+.phone:hover{color:var(--rose)}.phone:active{transform:scale(.99)}
+.after2{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;font-family:var(--serif);font-size:clamp(20px,2.2vw,30px);letter-spacing:.14em}
+.after2 em{font-family:var(--sans);font-size:14px;letter-spacing:.12em;color:var(--muted);transition:color .3s}
+.after2 em.done{color:var(--rose)}
+.addr{margin-top:clamp(48px,9vh,100px);padding-top:28px;border-top:1px solid var(--line);display:grid;gap:6px;color:var(--muted);font-size:clamp(14px,1.3vw,17px)}
+.addr b{display:block;font-family:var(--en);font-weight:400;font-size:12px;letter-spacing:.34em;color:var(--rose);text-transform:uppercase}
+.addr span{color:var(--ink);font-size:clamp(17px,1.8vw,24px);font-family:var(--serif);letter-spacing:.08em}
+footer{position:relative;padding:28px 0 36px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;letter-spacing:.08em;background:var(--bg)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px}
+
+@media(max-width:700px){.hero-mark{right:-34vw;height:78vh;opacity:.38}.s1{height:300vh}.s5{height:220vh}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .glow,.track,.scroll::after{animation:none}
+  .hero h1 .c{transform:none;animation:none}.hero p.lead,.hero .eyebrow,.scroll{animation:none;opacity:1}
+  .rv{transform:none;transition:opacity .3s linear}
+  .big .c{opacity:1;transition:none}.s1 .after{opacity:1;transform:none}
+  .s1,.s5{height:auto}.pin{position:relative;height:auto;padding:clamp(100px,16vh,180px) 0}
+}
+</style>
 </head>
 <body>
+<a class="skip" href="#main">跳到正文</a>
 
-<!-- 公司标识（取自 assets/kongpingji_logo.svg 的图形部分，镂空处透出背景） -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#C9A3A8"/><stop offset=".55" stop-color="#B98188"/><stop offset="1" stop-color="#9F6068"/>
-    </linearGradient>
-    <mask id="cut" maskUnits="userSpaceOnUse" x="-20" y="-20" width="460" height="460">
-      <rect x="-20" y="-20" width="460" height="460" fill="#fff"/>
-      <path d="M24 268C82 213 140 190 204 211C259 229 303 276 357 338" fill="none" stroke="#000" stroke-width="24" stroke-linecap="round"/>
-      <path d="M0 286L84 286L84 247Z" fill="#000"/>
-    </mask>
-    <symbol id="mark" viewBox="-10 -10 390 380">
-      <g mask="url(#cut)" fill="url(#rose)">
-        <path d="M0 0H84V286H0Z"/>
-        <path d="M176 42C279 78 334 170 334 286H250C250 197 219 133 164 99C151 91 139 86 126 82C142 67 158 54 176 42Z"/>
-      </g>
-      <path d="M29 286C86 236 139 219 197 238C244 254 280 292 324 344" fill="none" stroke="url(#rose)" stroke-width="30"/>
-    </symbol>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9A3A8"/><stop offset=".55" stop-color="#B98188"/><stop offset="1" stop-color="#9F6068"/></linearGradient>
+    <mask id="cut" maskUnits="userSpaceOnUse" x="-20" y="-20" width="460" height="460"><rect x="-20" y="-20" width="460" height="460" fill="#fff"/><path d="M24 268C82 213 140 190 204 211C259 229 303 276 357 338" fill="none" stroke="#000" stroke-width="24" stroke-linecap="round"/><path d="M0 286L84 286L84 247Z" fill="#000"/></mask>
+    <symbol id="mark" viewBox="-10 -10 390 380"><g mask="url(#cut)" fill="url(#rose)"><path d="M0 0H84V286H0Z"/><path d="M176 42C279 78 334 170 334 286H250C250 197 219 133 164 99C151 91 139 86 126 82C142 67 158 54 176 42Z"/></g><path d="M29 286C86 236 139 219 197 238C244 254 280 292 324 344" fill="none" stroke="url(#rose)" stroke-width="30"/></symbol>
   </defs>
 </svg>
 
-<nav id="nav">
-  <div class="wrap">
-    <a class="brand" href="#top" aria-label="重庆空瓶记">
-      <svg viewBox="-10 -10 390 380"><use href="#mark"/></svg>
-      <span>空瓶记<small>KONGPINGJI</small></span>
-    </a>
-    <ul>
-      <li><a href="#about">关于</a></li>
-      <li><a href="#brands">品牌</a></li>
-      <li><a href="#channels">渠道</a></li>
-      <li><a href="#service">服务</a></li>
-    </ul>
-    <a class="nav-cta" href="#contact">合作洽谈</a>
-  </div>
-</nav>
-
-<header class="hero" id="top">
-  <svg class="hero-mark" viewBox="-10 -10 390 380" aria-hidden="true"><use href="#mark"/></svg>
-  <div class="wrap">
-    <p class="eyebrow">Kongpingji Cosmetics · Chongqing</p>
-    <h1>值得空瓶，<br>方为<em>好物</em></h1>
-    <p class="lead">重庆空瓶记化妆品有限公司，深耕重庆的美妆个护品牌代理商。我们把好品牌带进连锁、商超、门店与即时零售，让每一件产品都被认真用到最后一滴。</p>
-    <div class="cta">
-      <a class="btn btn-fill" href="#contact">品牌合作洽谈</a>
-      <a class="btn btn-line" href="#brands">合作品牌</a>
-    </div>
-  </div>
-  <div class="scroll">SCROLL</div>
-</header>
-
-<div class="stats">
-  <div class="wrap">
-    <div class="stat rv"><b>16</b><span>合作品牌</span></div>
-    <div class="stat rv"><b>8</b><span>专业团队</span></div>
-    <div class="stat rv"><b>600㎡</b><span>标准仓储</span></div>
-    <div class="stat rv"><b>Daily</b><span>每日发货</span></div>
-  </div>
+<div class="top" id="top">
+  <a class="brand" href="#hero" aria-label="重庆空瓶记，回到开头"><svg viewBox="-10 -10 390 380" aria-hidden="true"><use href="#mark"/></svg><span>空瓶记<small>KONGPINGJI</small></span></a>
+  <a class="pill" href="#contact">合作洽谈</a>
 </div>
 
-<section id="about">
-  <div class="wrap about">
-    <div class="rv">
-      <p class="eyebrow">About us</p>
-      <h2>一瓶用到见底，<br>才算真的好用</h2>
-      <p>“空瓶记”这个名字，来自一个朴素的标准：值得空瓶的产品，才是好产品。我们以此挑选品牌、服务渠道，希望每一次合作都经得起消费者的真实使用。</p>
-      <p>我们专注做渠道赋能型代理商，没有自营门店，全部精力用于服务下游连锁与门店，不与渠道客户争利。</p>
-    </div>
-    <div class="panel rv" aria-hidden="true">
-      <svg viewBox="-10 -10 390 380"><use href="#mark"/></svg>
+<nav class="chap" aria-label="章节">
+  <a href="#c1" data-ch="1"><span>名字</span><i></i>I</a>
+  <a href="#c2" data-ch="2"><span>品牌</span><i></i>II</a>
+  <a href="#c3" data-ch="3"><span>渠道</span><i></i>III</a>
+  <a href="#c4" data-ch="4"><span>团队</span><i></i>IV</a>
+  <a href="#contact" data-ch="5"><span>联系</span><i></i>V</a>
+</nav>
+
+<main id="main">
+
+<!-- 序章 -->
+<header class="scene hero" id="hero">
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <svg class="hero-mark" id="heroMark" viewBox="-10 -10 390 380" aria-hidden="true"><use href="#mark"/></svg>
+  <div class="wrap">
+    <p class="eyebrow">Kongpingji Cosmetics · Chongqing</p>
+    <h1 id="h1" aria-label="值得空瓶，方为好物"><span class="ln">值得空瓶，</span><span class="ln">方为好物</span></h1>
+    <p class="lead">重庆空瓶记，深耕重庆的美妆个护品牌代理商。<br>我们把好品牌带进连锁、商超、门店与即时零售。</p>
+  </div>
+  <div class="scroll" aria-hidden="true">SCROLL</div>
+</header>
+
+<!-- 第一章 名字 -->
+<section class="scene s1" id="c1" data-ch="1" data-scrub>
+  <div class="pin">
+    <div class="glow g1"></div>
+    <div class="wrap">
+      <p class="eyebrow" style="margin-bottom:28px">Chapter I · 名字</p>
+      <p class="big" id="scrubText" aria-label="一瓶用到见底，才算真的好用。"><span class="ln">一瓶用到见底，</span><span class="ln">才算真的好用。</span></p>
+      <p class="after" id="after">“空瓶记”这个名字，来自一个朴素的标准：<b>值得空瓶的产品，才是好产品。</b>我们以此挑选品牌、服务渠道，希望每一次合作，都经得起消费者的真实使用。</p>
     </div>
   </div>
 </section>
 
-<section id="brands" style="padding-top:0">
+<!-- 第二章 品牌 -->
+<section class="scene s2" id="c2" data-ch="2">
+  <div class="glow g1"></div>
   <div class="wrap">
-    <div class="head rv">
-      <div>
-        <p class="eyebrow">Brand portfolio</p>
-        <h2>合作品牌</h2>
-      </div>
-      <p>覆盖彩妆与功效护肤，从大众到中高端，与值得信赖的品牌同行。</p>
-    </div>
-    <!-- 公开展示品牌 logo 前，请确认已获各品牌方同意 -->
-    <div class="wall rv">
-      <div class="tile"><img src="assets/brands/outofoffice.png" alt="OUT OF OFFICE" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/lilybyred.png" alt="Lilybyred" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/redchamber.png" alt="RED CHAMBER 朱栈" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/lan.png" alt="LAN" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/funnyelves.png" alt="FUNNY ELVES 方里" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/stridex.png" alt="Stridex" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/vitacitral.png" alt="Vita citral 维德勒" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/petersonslab.png" alt="PETERSON'S LAB 毕生之研" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/drwu.png" alt="DR.WU 达尔肤" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/cetaphil.png" alt="Cetaphil 丝塔芙" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/attenir.png" alt="Attenir 艾天然" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/menokin.png" alt="MENOKIN" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/borlind.png" alt="ANNEMARIE BÖRLIND 安娜柏林" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/zhanyan.png" alt="绽妍 JUYOU" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/eucerin.png" alt="Eucerin 优色林" loading="lazy"></div>
-      <div class="tile"><img src="assets/brands/ukiss.png" alt="UKISS" loading="lazy"></div>
-      <a class="tile cta" href="#contact">成为下一个合作品牌 <span>→</span></a>
-    </div>
-    <p class="note">所有品牌名称及标识归各品牌方所有。</p>
+    <p class="eyebrow rv">Chapter II · 品牌</p>
+    <div class="count rv"><b id="n16" data-to="16" aria-label="16">0</b><span>个合作品牌<small>覆盖彩妆与功效护肤，从大众到中高端</small></span></div>
   </div>
+  <div class="mq rv" aria-label="合作品牌">
+    <div class="track"><div style="display:flex"><img src="assets/brands/outofoffice.png" alt="OUT OF OFFICE" width="280" height="140"><img src="assets/brands/lilybyred.png" alt="Lilybyred" width="280" height="140"><img src="assets/brands/redchamber.png" alt="RED CHAMBER 朱栈" width="280" height="140"><img src="assets/brands/lan.png" alt="LAN" width="280" height="140"><img src="assets/brands/funnyelves.png" alt="FUNNY ELVES 方里" width="280" height="140"><img src="assets/brands/stridex.png" alt="Stridex" width="280" height="140"><img src="assets/brands/vitacitral.png" alt="Vita citral 维德勒" width="280" height="140"><img src="assets/brands/petersonslab.png" alt="PETERSON&#x27;S LAB 毕生之研" width="280" height="140"><img src="assets/brands/drwu.png" alt="DR.WU 达尔肤" width="280" height="140"><img src="assets/brands/cetaphil.png" alt="Cetaphil 丝塔芙" width="280" height="140"><img src="assets/brands/attenir.png" alt="Attenir 艾天然" width="280" height="140"><img src="assets/brands/menokin.png" alt="MENOKIN" width="280" height="140"><img src="assets/brands/borlind.png" alt="ANNEMARIE BÖRLIND 安娜柏林" width="280" height="140"><img src="assets/brands/zhanyan.png" alt="绽妍 JUYOU" width="280" height="140"><img src="assets/brands/eucerin.png" alt="Eucerin 优色林" width="280" height="140"><img src="assets/brands/ukiss.png" alt="UKISS" width="280" height="140"></div><div style="display:flex" aria-hidden="true"><img src="assets/brands/outofoffice.png" alt="" width="280" height="140"><img src="assets/brands/lilybyred.png" alt="" width="280" height="140"><img src="assets/brands/redchamber.png" alt="" width="280" height="140"><img src="assets/brands/lan.png" alt="" width="280" height="140"><img src="assets/brands/funnyelves.png" alt="" width="280" height="140"><img src="assets/brands/stridex.png" alt="" width="280" height="140"><img src="assets/brands/vitacitral.png" alt="" width="280" height="140"><img src="assets/brands/petersonslab.png" alt="" width="280" height="140"><img src="assets/brands/drwu.png" alt="" width="280" height="140"><img src="assets/brands/cetaphil.png" alt="" width="280" height="140"><img src="assets/brands/attenir.png" alt="" width="280" height="140"><img src="assets/brands/menokin.png" alt="" width="280" height="140"><img src="assets/brands/borlind.png" alt="" width="280" height="140"><img src="assets/brands/zhanyan.png" alt="" width="280" height="140"><img src="assets/brands/eucerin.png" alt="" width="280" height="140"><img src="assets/brands/ukiss.png" alt="" width="280" height="140"></div></div>
+    <div class="track"><div style="display:flex"><img src="assets/brands/drwu.png" alt="DR.WU 达尔肤" width="280" height="140"><img src="assets/brands/cetaphil.png" alt="Cetaphil 丝塔芙" width="280" height="140"><img src="assets/brands/attenir.png" alt="Attenir 艾天然" width="280" height="140"><img src="assets/brands/menokin.png" alt="MENOKIN" width="280" height="140"><img src="assets/brands/borlind.png" alt="ANNEMARIE BÖRLIND 安娜柏林" width="280" height="140"><img src="assets/brands/zhanyan.png" alt="绽妍 JUYOU" width="280" height="140"><img src="assets/brands/eucerin.png" alt="Eucerin 优色林" width="280" height="140"><img src="assets/brands/ukiss.png" alt="UKISS" width="280" height="140"><img src="assets/brands/outofoffice.png" alt="OUT OF OFFICE" width="280" height="140"><img src="assets/brands/lilybyred.png" alt="Lilybyred" width="280" height="140"><img src="assets/brands/redchamber.png" alt="RED CHAMBER 朱栈" width="280" height="140"><img src="assets/brands/lan.png" alt="LAN" width="280" height="140"><img src="assets/brands/funnyelves.png" alt="FUNNY ELVES 方里" width="280" height="140"><img src="assets/brands/stridex.png" alt="Stridex" width="280" height="140"><img src="assets/brands/vitacitral.png" alt="Vita citral 维德勒" width="280" height="140"><img src="assets/brands/petersonslab.png" alt="PETERSON&#x27;S LAB 毕生之研" width="280" height="140"></div><div style="display:flex" aria-hidden="true"><img src="assets/brands/drwu.png" alt="" width="280" height="140"><img src="assets/brands/cetaphil.png" alt="" width="280" height="140"><img src="assets/brands/attenir.png" alt="" width="280" height="140"><img src="assets/brands/menokin.png" alt="" width="280" height="140"><img src="assets/brands/borlind.png" alt="" width="280" height="140"><img src="assets/brands/zhanyan.png" alt="" width="280" height="140"><img src="assets/brands/eucerin.png" alt="" width="280" height="140"><img src="assets/brands/ukiss.png" alt="" width="280" height="140"><img src="assets/brands/outofoffice.png" alt="" width="280" height="140"><img src="assets/brands/lilybyred.png" alt="" width="280" height="140"><img src="assets/brands/redchamber.png" alt="" width="280" height="140"><img src="assets/brands/lan.png" alt="" width="280" height="140"><img src="assets/brands/funnyelves.png" alt="" width="280" height="140"><img src="assets/brands/stridex.png" alt="" width="280" height="140"><img src="assets/brands/vitacitral.png" alt="" width="280" height="140"><img src="assets/brands/petersonslab.png" alt="" width="280" height="140"></div></div>
+  </div>
+  <div class="wrap"><p class="note rv">所有品牌名称及标识归各品牌方所有。</p></div>
 </section>
 
-<section id="channels" class="channels">
+<!-- 第三章 渠道 -->
+<section class="scene s3" id="c3" data-ch="3">
   <div class="wrap">
-    <div class="head rv">
-      <div>
-        <p class="eyebrow">Channels</p>
-        <h2>渠道网络</h2>
-      </div>
-      <p>以线下为主，重庆多类终端的深度覆盖。</p>
-    </div>
-    <div class="cols">
-      <div class="col rv"><i>01</i><h3>连锁 CS</h3><p>重庆优质连锁几乎全覆盖，含新锐 CS 连锁系统。</p></div>
-      <div class="col rv"><i>02</i><h3>KA 商超</h3><p>稳定的 KA 渠道合作，品牌曝光与销售兼顾。</p></div>
-      <div class="col rv"><i>03</i><h3>饰品店</h3><p>进驻魅力城市等饰品渠道，精准触达年轻消费者。</p></div>
-      <div class="col rv"><i>04</i><h3>政企平台</h3><p>覆盖政企采购与福利平台，拓展团购场景。</p></div>
-    </div>
-    <div class="feat rv">
-      <div class="feat-t"><i>05 · 重点合作渠道</i><h3>即时零售</h3></div>
-      <p>重点布局即时零售平台，以中小样与试用装做引流，让新用户先试再买，把试用转化为销售；与线下连锁、门店互补，触达更即时的消费场景。</p>
-      <a href="#contact">想在重庆做即时零售？欢迎来聊 →</a>
-    </div>
-  </div>
-</section>
-
-<section id="service">
-  <div class="wrap">
-    <div class="head rv">
-      <div>
-        <p class="eyebrow">Services</p>
-        <h2>我们为品牌做什么</h2>
-      </div>
-      <p>小而精的团队，职能完整、响应迅速。</p>
-    </div>
+    <p class="eyebrow rv">Chapter III · 渠道</p>
+    <h2 class="hl rv">把好品牌，<br>带进重庆的终端</h2>
     <div class="rows">
-      <div class="row rv"><i>01</i><h3>渠道拓展</h3><p>渠道开拓与客情维护，把品牌准确铺进目标终端。</p></div>
-      <div class="row rv"><i>02</i><h3>培训与动销</h3><p>品牌培训、BA 培训与动销策划，帮助终端把货卖动。</p></div>
-      <div class="row rv"><i>03</i><h3>数据回传与复盘</h3><p>终端数据回传，配合品牌方周会、月会复盘。</p></div>
-      <div class="row rv"><i>04</i><h3>仓储与物流</h3><p>600 平米标准仓库，专职仓储，快递物流全覆盖，每日发货。</p></div>
-      <div class="row rv"><i>05</i><h3>控价护盘</h3><p>配合品牌方终端控价，严格维护市场秩序。</p></div>
-      <div class="row rv"><i>06</i><h3>订单与售后</h3><p>订单处理与终端诉求响应，客服、财务专人对接。</p></div>
+      <div class="chrow rv"><i>01</i><h3>连锁 CS</h3><p>重庆优质连锁几乎全覆盖，含新锐 CS 连锁系统。</p></div>
+      <div class="chrow rv"><i>02</i><h3>KA 商超</h3><p>稳定的 KA 渠道合作，品牌曝光与销售兼顾。</p></div>
+      <div class="chrow rv"><i>03</i><h3>饰品店</h3><p>进驻魅力城市等饰品渠道，精准触达年轻消费者。</p></div>
+      <div class="chrow rv"><i>04</i><h3>政企平台</h3><p>覆盖政企采购与福利平台，拓展团购场景。</p></div>
+    </div>
+  </div>
+  <div class="scene feat" id="instant">
+    <div class="glow g1"></div>
+    <div class="ghost" id="ghost" aria-hidden="true">即时</div>
+    <div class="wrap">
+      <span class="tag rv">05 · 重点合作渠道</span>
+      <h3 class="rv">即时零售</h3>
+      <p class="rv">重点布局即时零售平台，以中小样与试用装做引流，让新用户先试再买，把试用转化为销售。与线下连锁、门店互补，触达更即时的消费场景。</p>
+      <a class="go rv" href="#contact">想在重庆做即时零售？欢迎来聊 <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
 
-<section class="quote">
-  <div class="wrap rv">
-    <p class="eyebrow">Our belief</p>
-    <blockquote>值得<em>空瓶</em>的产品，<br>才是好产品。</blockquote>
-  </div>
-</section>
-
-<section id="contact" class="contact">
+<!-- 第四章 团队 -->
+<section class="scene s4" id="c4" data-ch="4">
   <div class="wrap">
-    <div class="rv">
-      <p class="eyebrow">Contact</p>
-      <h2 class="ct">品牌合作 · 渠道经销，<br>欢迎来电</h2>
-      <div class="phone-row">
-        <button class="big" id="copyPhone" type="button" data-copy="13996299200" aria-label="点击复制手机号 139 9629 9200">139 9629 9200</button>
-        <span class="after"><b>杨经理</b><em id="copyHint">微信同号 · 点击复制</em></span>
-      </div>
-      <div class="info">
-        <div><small>Address</small>重庆市两江新区紫竹路101号1幢1201<br><span style="color:var(--muted)">周一至周六到访，请提前电话预约</span></div>
-      </div>
+    <p class="eyebrow rv">Chapter IV · 团队</p>
+    <h2 class="hl rv">小而完整，<br>快而稳</h2>
+    <div class="stats">
+      <div class="stat rv"><div class="n"><span data-to="8">0</span><sub>人</sub></div><h4>专业团队</h4><p>销售、培训、客服、财务，职能完整</p></div>
+      <div class="stat rv"><div class="n"><span data-to="600">0</span><sub>㎡</sub></div><h4>标准仓储</h4><p>专职仓储人员，现代化标准仓库</p></div>
+      <div class="stat rv"><div class="n">每日</div><h4>发货</h4><p>快递物流全覆盖</p></div>
+    </div>
+    <div class="svc rv">
+      <span>渠道拓展</span><span>培训与动销</span><span>数据回传与复盘</span><span>控价护盘</span><span>订单与售后</span><span>仓储与物流</span>
     </div>
   </div>
 </section>
+
+<!-- 终章 -->
+<section class="scene s5" data-ch="5" data-scrub aria-label="品牌主张">
+  <div class="pin">
+    <div class="glow g1"></div>
+    <svg class="qmark" viewBox="-10 -10 390 380" aria-hidden="true"><use href="#mark"/></svg>
+    <blockquote id="quote">值得空瓶，<br>方为<em>好物</em>。</blockquote>
+  </div>
+</section>
+
+<section class="scene s6" id="contact" data-ch="5">
+  <div class="glow g1"></div>
+  <div class="wrap">
+    <p class="eyebrow rv">Chapter V · 联系</p>
+    <h2 class="hl rv"><span style="white-space:nowrap">品牌合作 ·</span> <span style="white-space:nowrap">渠道经销，</span><br>欢迎来电</h2>
+    <div class="phone-row rv">
+      <button class="phone" id="copyPhone" type="button" data-copy="13996299200" aria-label="点击复制手机号 139 9629 9200">139 9629 9200</button>
+      <span class="after2"><b class="serif">杨经理</b><em id="copyHint">微信同号 · 点击复制</em></span>
+    </div>
+    <div class="addr rv"><b>Address</b><span>重庆市两江新区紫竹路101号1幢1201</span>周一至周六到访，请提前电话预约</div>
+  </div>
+</section>
+
+</main>
 
 <footer>
   <div class="wrap">
@@ -194,9 +316,60 @@
 
 <script>
 (function(){
-  var nav=document.getElementById('nav');
-  function s(){nav.classList.toggle('scrolled',window.scrollY>30)}
-  s();addEventListener('scroll',s,{passive:true});
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function split(el){var t=el.textContent;el.textContent='';var out=[];Array.from(t).forEach(function(ch,i){var s=document.createElement('span');s.className='c';s.textContent=ch;s.style.setProperty('--i',i);el.appendChild(s);out.push(s)});return out}
+
+  /* hero heading: split per line */
+  document.querySelectorAll('#h1 .ln').forEach(function(l){split(l)});
+
+  /* top bar */
+  var top=document.getElementById('top');
+
+  /* reveal once */
+  var rv=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)||reduce){rv.forEach(function(e){e.classList.add('in')})}
+  else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.14});
+    rv.forEach(function(e,i){e.style.transitionDelay=((i%3)*90)+'ms';io.observe(e)})}
+
+  /* count up */
+  function countUp(el){var to=+el.getAttribute('data-to');if(reduce){el.textContent=to;return}var t0=null,d=1800;
+    function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/d,1),e=1-Math.pow(1-p,4);el.textContent=Math.round(to*e);if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+  var cu=document.querySelectorAll('[data-to]');
+  if('IntersectionObserver' in window){var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){countUp(e.target);co.unobserve(e.target)}})},{threshold:.6});cu.forEach(function(e){co.observe(e)})}
+  else{cu.forEach(function(e){e.textContent=e.getAttribute('data-to')})}
+
+  /* chapter indicator */
+  var chs=[].slice.call(document.querySelectorAll('.chap a'));
+  if('IntersectionObserver' in window){
+    var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var n=e.target.getAttribute('data-ch');chs.forEach(function(a){a.classList.toggle('on',a.getAttribute('data-ch')===n)})}})},{rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('.scene[data-ch]').forEach(function(s){cio.observe(s)});
+  }
+
+  /* scrubbed scenes + parallax, one rAF loop */
+  var s1=document.getElementById('c1'),chars=[];document.querySelectorAll('#scrubText .ln').forEach(function(l){chars=chars.concat(split(l))}),after=document.getElementById('after');
+  var s5=document.querySelector('.s5'),quote=document.getElementById('quote');
+  var hm=document.getElementById('heroMark'),ghost=document.getElementById('ghost'),feat=document.getElementById('instant');
+  function prog(sec){var r=sec.getBoundingClientRect(),h=sec.offsetHeight-innerHeight;return Math.min(1,Math.max(0,-r.top/h))}
+  var tick=false;
+  function frame(){
+    tick=false;var y=scrollY;
+    top.classList.toggle('bg',y>40);
+    if(reduce)return;
+    var p=prog(s1),n=Math.floor(Math.min(1,p/0.72)*chars.length*1.02);
+    for(var i=0;i<chars.length;i++){var on=i<n;if(chars[i].classList.contains('on')!==on)chars[i].classList.toggle('on',on)}
+    after.classList.toggle('on',p>0.78);
+    var q=prog(s5),e=Math.min(1,q/0.55);
+    quote.style.opacity=Math.min(1,0.08+e*1.1);
+    quote.style.transform='scale('+(0.82+0.18*e)+')';
+    quote.style.filter='blur('+((1-e)*14)+'px)';
+    if(y<innerHeight*1.4)hm.style.transform='translate3d(0,'+(-y*0.12)+'px,0)';
+    var fr=feat.getBoundingClientRect();
+    if(fr.bottom>0&&fr.top<innerHeight){ghost.style.transform='translate(-50%,-50%) translate3d('+((fr.top/innerHeight)*-9)+'vw,0,0)'}
+  }
+  function req(){if(!tick){tick=true;requestAnimationFrame(frame)}}
+  addEventListener('scroll',req,{passive:true});addEventListener('resize',req);frame();
+
+  /* copy phone */
   var cp=document.getElementById('copyPhone'),hint=document.getElementById('copyHint'),t;
   cp.addEventListener('click',function(){
     var v=cp.getAttribute('data-copy');
@@ -204,10 +377,6 @@
     function fb(){var a=document.createElement('textarea');a.value=v;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);ok()}
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(ok,fb)}else{fb()}
   });
-  var els=document.querySelectorAll('.rv');
-  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
-  els.forEach(function(e,i){e.style.transitionDelay=(i%4)*80+'ms';io.observe(e)});
 })();
 </script>
 </body>
